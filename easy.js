@@ -5,6 +5,7 @@ const DISTANCE = 100;
 // I suggest using an array of objects but feel free to change that
 // An example of a puzzle piece object could be: { name: ".box1", x: 0, y: 0 }
 **********************************/
+// Boxes here
 var piecesHTML = document.querySelectorAll('[class^="box"]');
 const puzzlePieces = [
   {name: '.box1', x: 0, y: 0}, 
@@ -42,7 +43,7 @@ const puzzle = {
     // attache click event handlers for each piece
     // and within that, invokes the slide function
     ***************************************/
-
+// Functions for each piece for puzzle
    for(var element of piecesHTML){
     element.addEventListener('click', function(e){
       puzzle.currentPiece = e.target;
